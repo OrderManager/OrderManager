@@ -8,7 +8,17 @@ public class User {
 	private String phone;
 	private String address;
 	private double money;
-	private int rule_id;
+	private int ruleid;
+
+	public User(int id, String name, String password, String phone, String address, double money, int ruleid) {
+		this.id = id;
+		this.name = name;
+		this.password = password;
+		this.phone = phone;
+		this.address = address;
+		this.money = money;
+		this.ruleid = ruleid;
+	}
 
 	public String getName() {
 		return name;
@@ -58,12 +68,12 @@ public class User {
 		this.money = money;
 	}
 
-	public int getRule_id() {
-		return rule_id;
+	public int getRuleid() {
+		return ruleid;
 	}
 
-	public void setRule_id(int rule_id) {
-		this.rule_id = rule_id;
+	public void setRule_id(int ruleid) {
+		this.ruleid = ruleid;
 	}
 
 }
